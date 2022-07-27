@@ -26,6 +26,8 @@ body {
     color: white;
     font-weight: 900;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 1px 1px 0 #000;
+    background-color: rgba(0, 0, 0, 0.472);
+    padding: 5px;
 }
 a {
     color: inherit;
@@ -33,7 +35,7 @@ a {
 }
 .form {
     width: 60%;
-    height: 90%;
+    height: 50%;
     margin: 0;
     padding: 0;
     margin-top: 5%;
@@ -47,7 +49,7 @@ a {
 }
 .form-label {
     font-weight: 900;
-    font-size: 20px;
+    font-size: 14px;
     display: block;
     transition: all 0.5s;
     transform: translateY(-3.4rem);
@@ -55,7 +57,7 @@ a {
 .form-input {
     border: 2px solid gray;
     color: #333;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0.2rem 0.2rem;
     border-radius: 0.2rem;
     width: 100%;
@@ -76,6 +78,7 @@ a {
 form {
     padding-top: 3%;
     width: 80%;
+    height: 40%;
     margin-left: 0%;
     background-color: rgba(0, 0, 0, 0.034);
 }
@@ -83,7 +86,56 @@ form {
     display: flex;
     flex-direction: row;
     width: 90%;
+    height: 50%;
 }
 .inputs > :last-child {
     padding-left: 10%;
+}
+.form-end {
+    margin-top: 20px;
+    position: absolute;
+    font-size: 10px;
+}
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 6px;
+    border: none;
+    font-size: 30px;
+    background: #009900;
+    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+    color: #dfdedf;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(139, 139, 139);
+    border-right: 2px solid rgb(139, 139, 139);
+}
+.btn:hover {
+    outline: 0;
+    box-shadow: inset 0px 0.8px 1px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+}
+.login {
+    color: #009900;
+}
+.error {
+    border: 2px solid #ff0000;
+}
+.errorMessage {
+    font-size: 20px;
+    font-weight: 900;
+    color: #ff0000;
+}
+.img-logo {
+    width: 10%;
+    height: fit-content;
+    position: fixed;
+    margin-left: 30%;
+    background-color: rgba(0, 0, 0, 0.178);
+}
+.odin-img {
+    width: 100%;
 }
